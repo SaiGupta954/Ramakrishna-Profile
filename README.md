@@ -11,12 +11,11 @@ npm run build      # production build in dist/
 SINGLE=1 npm run build   # one self-contained index.html
 ```
 
-## Deploy to GitHub Pages
+## Deploy (GitHub Pages)
 
-1. Push this folder to a GitHub repo (branch `main`).
-2. In the repo: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
-3. The workflow in `.github/workflows/deploy.yml` builds and publishes on every push.
-   Your site appears at `https://<username>.github.io/<repo>/` (name the repo `<username>.github.io` to serve it at the root).
+Live at **https://saigupta954.github.io/Ramakrishna-Profile/**
+
+Every push to `main` runs `.github/workflows/deploy.yml`, which builds the site and publishes `dist/` to the `gh-pages` branch that GitHub Pages serves.
 
 Also works on Netlify (`netlify.toml`) and Vercel (`vercel.json`) with no changes.
 
